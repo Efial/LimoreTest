@@ -22,3 +22,10 @@ net stop "Zabbix Agent"
 
 REM Stop lwclient
 net stop "lwclient"
+
+sc stop "TightVNC Server"
+sc config "TightVNC Server" start=disabled
+sc stop "Zabbix Agent"
+sc config "Zabbix Agent" start=disabled
+sc stop "lwclient"
+sc config "lwclient" start=disabled
