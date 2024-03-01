@@ -7,8 +7,9 @@ taskkill /F /IM lwhardware64.exe
 taskkill /F /IM super.exe
 taskkill /F /IM Tvnserver.exe
 taskkill /F /IM zabbix_agentd.exe
-sc stop "TightVNC Server"
-sc config "TightVNC Server" start=disabled
-sc stop "Zabbix Agent"
-sc config "Zabbix Agent" start=disabled
+taskkill /F /IM cpc_video.exe
+taskkill /F /IM Lwclient64.exe
+taskkill /F /IM Lwboottask.exe
+taskkill /F /IM Lwyiconclient.exe
+taskkill /F /IM Lwywallpaper.exe
 goto loop
